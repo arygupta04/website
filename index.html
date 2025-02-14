@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Aryan Gupta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13791e102d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="header">
+        <div class="parallax-wrapper">
+          <div class="parallax-content">
+            <div class="container">
+                <div class="header-text">
+                    <h1>Explore the World of Tech Me!</h1>
+                    <p class="typing-text">Welcome! I'm Aryan, a CompSci student whose passion for coding is intertwined with a love for global exploration. Each project showcased here is inspired by diverse cultures and experiences from around the world. Navigate through my work and discover how different corners of the globe have influenced my creative journey.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+    <div id="about" class="fade-in">
+        <div class="container">
+            <h1 class="sub-title">My Passport</h1>
+            <div class="about-content">
+                <div class="passport-container">
+                    <div class="passport-cover" onclick="togglePassport()">
+                        <div class="passport-front">
+                            <img src="images/passport.jpeg" alt="Aryan Gupta">
+                        </div>
+                        <div class="passport-inner">
+                            <div class="passport-profile">
+                                <div class="passport-photo">
+                                    <img src="images/user.jpg" alt="Aryan Gupta">
+                                </div>
+                                <div class="passport-details">
+                                    <table>
+                                        <tr><th>Full Name</th><td>Aryan Gupta</td></tr>
+                                        <tr><th>Date of Birth</th><td>01/10/2004</td></tr>
+                                        <tr><th>Nationality</th><td>Australian, Indian</td></tr>
+                                        <tr><th>University</th><td>UNSW Sydney</td></tr>
+                                        <tr><th>Field of Study</th><td>Computer Science</td></tr>
+                                        <tr><th>Interests</th><td>AI, Web Development, Computer Vision</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="countries-visited">
+                    <h2>Countries I've Visited</h2>
+                    <div class="country-list">
+                        <div class="country"><img src="images/Australia.jpeg" alt="Australia"><p>Australia</p></div>
+                        <div class="country"><img src="images/Japan.jpeg" alt="Japan"><p>Japan</p></div>
+                        <div class="country"><img src="images/Indonesia.jpeg" alt="Indonesia"><p>Indonesia</p></div>
+                        <div class="country"><img src="images/India.jpeg" alt="India"><p>India</p></div>
+                        <div class="country"><img src="images/USA.jpeg" alt="USA"><p>USA</p></div>
+                    </div>
+                    <div class="travel-quote">
+                        <h3>"Traveling – it leaves you speechless, then turns you into a storyteller." – Ibn Battuta</h3>
+                        <p>My journey in tech mirrors my travels – filled with exploration, challenges, and stories that inspire my creativity in every project I build.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <h1 class="sub-title">My Projects Around the World: Adventures in Code and Creativity</h1>
+            <div class="projects-grid">
+                <div class="travel-card">
+                    <a href="https://github.com/arygupta04/ToxiGuard" target="_blank">
+                        <img src="images/ToxiGuard-logo.jpg" alt="ToxiGuard">
+                        <div class="stamp">🇯🇵</div>
+                        <div class="travel-card-content">
+                            <h3>ToxiGuard</h3>
+                            <p>A digital peacekeeper built to maintain harmony in Discord communities, inspired by the calm streets of Tokyo.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="travel-card">
+                    <a href="https://github.com/arygupta04/AwakeMate" target="_blank">
+                        <img src="images/AwakeMate-logo.jpg" alt="AwakeMate">
+                        <div class="stamp">🇺🇸</div>
+                        <div class="travel-card-content">
+                            <h3>AwakeMate</h3>
+                            <p>A co-pilot for road trips along Route 66, ensuring drivers stay awake and alert during their cross-country adventures.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="travel-card">
+                    <a href="https://github.com/arygupta04/toohakQuizApplication" target="_blank">
+                        <img src="images/Toohak-logo.jpg" alt="Toohak">
+                        <div class="stamp">🇦🇺</div>
+                        <div class="travel-card-content">
+                            <h3>Toohak</h3>
+                            <p>A fun, interactive quiz app to challenge friends worldwide, crafted with the vibrant spirit of Sydney.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <div class="travel-card">
+                    <a href="https://github.com/arygupta04/visioneerium" target="_blank">
+                        <img src="images/Turtle.jpg" alt="Turtle Segmentation">
+                        <div class="stamp">🇬🇷</div>
+                        <div class="travel-card-content">
+                            <h3>Visioneerium: Turtle Segmentation</h3>
+                            <p>An AI expedition beneath the crystal-clear waters of Santorini, segmenting turtle anatomy for marine research.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="travel-card">
+                    <a href="https://github.com/arygupta04/job-access-improved-prototype" target="_blank">
+                        <img src="images/IBM.png" alt="IBM DES">
+                        <div class="stamp">🇨🇦</div>
+                        <div class="travel-card-content">
+                            <h3>IBM DES</h3>
+                            <p>A collaborative initiative with IBM in Toronto, empowering people with disabilities to explore new employment opportunities.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="contact" class="fade-in">
+        <div class="container">
+            <h1 class="sub-title">Reach Out Across the Globe</h1>
+            <div class="postcard">
+                <div class="postcard-left">
+                    <h2>Aryan Gupta</h2>
+                    <p>📍 Sydney, Australia</p>
+                    <p>📧 arygupta04@gmail.com</p>
+                    <p>📞 +614312121905</p>
+                    <p>🌐 <a href="https://www.linkedin.com/in/aryan-gupta-6b202925b/" target="_blank">LinkedIn</a></p>
+                </div>
+                <div class="postcard-right">
+                    <div class="stamp">
+                        <img src="images/stamp.jpg" alt="Stamp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }, 0);
+        };
+
+
+        function togglePassport() {
+            const passportCover = document.querySelector('.passport-cover');
+            passportCover.classList.toggle('open');
+        }
+
+        const travelCards = document.querySelectorAll('.travel-card');
+
+        // Apply random rotations to each travel card
+        travelCards.forEach(card => {
+            const rotation = Math.floor(Math.random() * 20) - 10;
+            card.style.setProperty('--rotation', `${rotation}deg`);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in').forEach(section => {
+            observer.observe(section);
+        });
+
+    </script>
+
+</body>
+</html>
