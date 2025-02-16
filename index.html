@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website - Aryan Gupta</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/13791e102d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    
 </head>
 <body>
     <nav class="navbar">
@@ -25,8 +25,8 @@
           <div class="parallax-content">
             <div class="container">
                 <div class="header-text">
-                    <h1>Explore the World of Tech Me!</h1>
-                    <p class="typing-text">Welcome! I'm Aryan, a CompSci student whose passion for coding is intertwined with a love for global exploration. Each project showcased here is inspired by diverse cultures and experiences from around the world. Navigate through my work and discover how different corners of the globe have influenced my creative journey.</p>
+                    <h1>Explore The World Of Tech With Me!</h1>
+                    <p class="typing-text">Hey 👋! I'm Aryan, a CompSci student whose passion for coding is intertwined with a love for global exploration. Each project showcased here is inspired by diverse cultures and experiences from around the world. Navigate through my work and discover how different corners of the globe have influenced my creative journey.</p>
                 </div>
             </div>
           </div>
@@ -53,7 +53,7 @@
                                         <tr><th>Full Name</th><td>Aryan Gupta</td></tr>
                                         <tr><th>Date of Birth</th><td>01/10/2004</td></tr>
                                         <tr><th>Nationality</th><td>Australian, Indian</td></tr>
-                                        <tr><th>University</th><td>UNSW Sydney</td></tr>
+                                        <tr><th>University</th><td>UNSW</td></tr>
                                         <tr><th>Field of Study</th><td>Computer Science</td></tr>
                                         <tr><th>Interests</th><td>AI, Web Development, Computer Vision</td></tr>
                                     </table>
@@ -61,7 +61,10 @@
                             </div>
                         </div>
                     </div>
+                    <button class="flip-button" onclick="togglePassport()">CLICK HERE</button>
                 </div>
+                
+
                 <div class="countries-visited">
                     <h2>Countries I've Visited</h2>
                     <div class="country-list">
@@ -141,7 +144,6 @@
         </div>
     </section>
 
-    
     <div id="contact" class="fade-in">
         <div class="container">
             <h1 class="sub-title">Reach Out Across the Globe</h1>
@@ -170,7 +172,6 @@
             }, 0);
         };
 
-
         function togglePassport() {
             const passportCover = document.querySelector('.passport-cover');
             passportCover.classList.toggle('open');
@@ -178,7 +179,7 @@
 
         const travelCards = document.querySelectorAll('.travel-card');
 
-        // Apply random rotations to each travel card
+        // For applying random rotation to travel cards
         travelCards.forEach(card => {
             const rotation = Math.floor(Math.random() * 20) - 10;
             card.style.setProperty('--rotation', `${rotation}deg`);
